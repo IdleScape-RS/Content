@@ -1,6 +1,7 @@
 [tinderbox]
 name=Tinderbox
 desc=Useful for lighting a fire.
+cost=100
 model=inv_tinderbox
 recol1s=32767
 recol1d=21140
@@ -85,9 +86,11 @@ tradeable=no
 tradeable=no
 
 [logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Logs
 desc=A number of wooden logs.
-cost=4
+cost=1
 model=inv_woodlogs
 weight=2kg
 2dxof=3
@@ -104,6 +107,8 @@ param=productexp,400
 param=funeral_pyre_struct,pyre_logs
 
 [magic_logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Magic logs
 desc=Logs made from magical wood.
 members=yes
@@ -124,6 +129,8 @@ param=productexp,3038
 param=funeral_pyre_struct,pyre_magic_logs
 
 [yew_logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Yew logs
 desc=Logs cut from a yew tree.
 cost=160
@@ -143,6 +150,8 @@ param=productexp,2025
 param=funeral_pyre_struct,pyre_yew_logs
 
 [maple_logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Maple logs
 desc=Logs cut from a maple tree.
 cost=80
@@ -162,6 +171,8 @@ param=productexp,1350
 param=funeral_pyre_struct,pyre_maple_logs
 
 [willow_logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Willow logs
 desc=Logs cut from a willow tree.
 cost=40
@@ -181,6 +192,8 @@ param=productexp,900
 param=funeral_pyre_struct,pyre_willow_logs
 
 [oak_logs]
+// Idlescape: logs stack so an idle chopper never stops at 28.
+stackable=yes
 name=Oak logs
 desc=Logs cut from an oak tree.
 cost=20

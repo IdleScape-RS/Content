@@ -101,11 +101,12 @@ wanderrange=2
 
 [newbie_basics_instructor]
 vislevel=hide
-name=RuneScape Guide
-desc=Your introduction to the world of RuneScape.
+name=Idle Guide
+desc=Explains how Idlescape works.
 walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
 readyanim=human_ready
 op1=Talk-to
+op3=Trade
 alwaysontop=yes
 recol1s=6273
 recol1d=14764
@@ -131,7 +132,7 @@ model9=man_torsoextra_paladin_star
 head1=chat_male_head_bald
 head2=chat_male_jaw_goaty
 head3=chat_male_berret
-wanderrange=2
+wanderrange=0
 
 [newbie_magic_instructor]
 vislevel=hide

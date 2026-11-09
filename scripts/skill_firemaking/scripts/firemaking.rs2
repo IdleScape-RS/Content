@@ -9,6 +9,25 @@ if (last_useitem = tinderbox) {
     ~displaymessage(^dm_default);
 }
 
+// Idlescape: keep a fire alive by feeding it more logs. The fire loc is re-armed with a fresh
+// duration, and ~fire_ashes keeps waiting until the fire is actually gone.
+[oplocu,fire]
+if (oc_category(last_useitem) ! category_22 | last_useitem = hollow_bark) {
+    ~displaymessage(^dm_default);
+    return;
+}
+def_int $feed_level = oc_param(last_useitem, levelrequire);
+if (stat(firemaking) < $feed_level) {
+    mes("You need a Firemaking level of <tostring($feed_level)> to burn <oc_name(last_useitem)>.");
+    return;
+}
+inv_del(inv, last_useitem, 1);
+stat_advance(firemaking, oc_param(last_useitem, productexp));
+anim(human_createfire, 0);
+sound_synth(fire_lit, 1, 0);
+mes("The fire burns brighter.");
+loc_change(fire, calc(100 + random(100)));
+
 // opheldu for logs is handled in fletching
 [opheldu,tinderbox]
 if (last_useitem = newbielogs) {
@@ -126,9 +145,14 @@ mes("The fire catches and the logs begin to burn.");
 def_int $delay = calc(100 + random(100)); // firemaking length: https://archive.is/zF5hb
 // Temp note: dur does not need updated
 loc_add($fire_coord, fire, 1, centrepiece_straight, $delay);
+~fire_ashes($fire_coord);
 
-// -2 to match osrs behavior. Potentially this is an engine problem with world_delay being too slow though
-world_delay(add($delay, -2));
+// Idlescape: because a fire can be fed with more logs, its lifetime is not fixed. Poll until the
+// fire loc is actually gone, then leave the ashes behind.
+[proc,fire_ashes](coord $fire_coord)
+while (loc_find($fire_coord, fire) = true) {
+    world_delay(10);
+}
 obj_addall($fire_coord, ashes, 1, 100);
 
 [proc,area_allow_loc_add](coord $coord)(boolean)

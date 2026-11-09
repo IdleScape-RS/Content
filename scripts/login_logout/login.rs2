@@ -1,5 +1,5 @@
 [login,_]
-mes("Welcome to RuneScape.");
+mes("Welcome to Idlescape.");
 cam_reset;
 
 %musicplay = 1; // set to auto on login
@@ -36,8 +36,6 @@ settimer(stat_regen, 100);
 settimer(stat_boost_restore, 100);
 // same for health
 settimer(health_regen, 100);
-// random event timer
-settimer(general_macro_events, 500);
 // chest macro gas 
 ~check_chest_macro_gas;
 // for logout out during a general macro event, they respawn when you log back in
@@ -78,8 +76,12 @@ if(inzone(movecoord(^grandtree_jail_coord, 0, 0, -2), movecoord(^grandtree_jail_
 
 ~update_all(inv_getobj(worn, ^wearpos_rhand));
 cam_reset;
-if (%tutorial < ^tutorial_complete & ~in_tutorial_island(coord) = true) {
-    @start_tutorial;
+// Idlescape: there is no tutorial. A brand new account starts in the guide's hall with an axe,
+// and keeps its position from then on.
+if (%tutorial < ^tutorial_complete) {
+    %tutorial = ^tutorial_complete;
+    p_teleport(0_48_48_22_34);
+    inv_add(inv, bronze_axe, 1);
 }
 ~initalltabs;
 queue(follower_login, 0, 0);

@@ -1,10 +1,8 @@
 // Tutorial Island Tree
-[oploc1,newbietree] @tut_woodcutting;
-[oploc1,newbietree2] @tut_woodcutting;
+// Idlescape: the normal trees on the island are real trees (category=tree), so they are handled by
+// skill_woodcutting instead of the tutorial's scripted woodcutting lesson.
 [oploc1,newbiedeadtree2] @tut_woodcutting;
 
-[oplocu,newbietree] @tut_woodcutting_useitem;
-[oplocu,newbietree2] @tut_woodcutting_useitem;
 [oplocu,newbiedeadtree2] @tut_woodcutting_useitem;
 
 [label,tut_woodcutting_useitem]
@@ -98,12 +96,3 @@ inv_add(inv, newbielogs, 1);
 inv_add(inv, newbielogs, 1);
 ~set_tutorial_progress;
 ~objbox(newbielogs, "You get some logs.", 250, 0, 0);
-
-[oploc1,newbieoaktree]
-if (%tutorial < ^newbie_survival_instructor_cut_tree) {
-    ~mesbox("You cannot cut down this tree yet.|You must progress further in the tutorial.");
-    return;
-} else {
-    ~mesbox("You won't be able to chop oak trees until you have a Woodcutting level of 15. You'll advance to higher Woodcutting levels by chopping down normal trees. At higher Woodcutting levels you will find even more trees you can cut.");
-    return;
-}

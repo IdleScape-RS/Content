@@ -147,6 +147,8 @@ mapscene=0
 op1=Chop down
 op3=hidden
 param=next_loc_stage,treestump2
+// Idlescape: these are ordinary, never-depleting trees handled by skill_woodcutting.
+category=tree
 
 [newbietree2]
 name=Tree
@@ -158,6 +160,8 @@ mapscene=0
 op1=Chop down
 op3=hidden
 param=next_loc_stage,treestump2
+// Idlescape: these are ordinary, never-depleting trees handled by skill_woodcutting.
+category=tree
 
 [newbiedeadtree2]
 name=Tree
@@ -179,3 +183,5 @@ length=3
 op1=Chop down
 op3=hidden
 mapscene=1
+// Idlescape: these are ordinary, never-depleting trees handled by skill_woodcutting.
+category=tree
