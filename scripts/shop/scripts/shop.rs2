@@ -90,7 +90,10 @@ while($i < $amount) {
         return;
     }
     $total_cost = calc($total_cost + $added_amt);
-    inv_del(inv, coins, $added_amt);
+    // a free item has nothing to take (and inv_del rejects a count of 0)
+    if($added_amt > 0) {
+        inv_del(inv, coins, $added_amt);
+    }
     inv_moveitem_uncert(%shop, inv, $obj, 1);
     $i = calc($i + 1);
 }
@@ -141,7 +144,8 @@ def_int $cost = oc_cost($obj);
 def_int $value = ~calc_shop_value($cost, %shop_haggle, %shop_sell, ~price_mod(%shop, $diff, $obj));
 // Unlike sell values, shop purchase values can't be 0 (I believe...), not entirely sure if this is how
 // it's supposed to be handled or if the formula needs to be altered somehow
-if($value < 1) { 
+// Idlescape: except for items that are deliberately free (oc_cost 0), which the starter shop sells.
+if($cost > 0 & $value < 1) { 
     $value = 1;
 }
 return ($value);

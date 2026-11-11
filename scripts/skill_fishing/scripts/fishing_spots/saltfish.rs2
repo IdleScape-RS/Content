@@ -28,8 +28,8 @@ switch_obj(last_useitem) {
 if (~check_fish_equipment(net) = false) {
     return;
 }
-// check if inv is full
-if (inv_freespace(inv) < 1) {
+// check if inv is full: shrimps and anchovies stack, so only stop when neither can be added
+if (inv_itemspace(inv, raw_shrimp, 1, inv_size(inv)) = false & inv_itemspace(inv, raw_anchovies, 1, inv_size(inv)) = false) {
     anim(null, 0);
     ~mesbox("You can't carry any more fish.");
     return;
@@ -62,8 +62,8 @@ if (afk_event = ^true & npc_param(is_whirlpool) = ^false) {
 if (~check_fish_equipment(net) = false) {
     return;
 }
-// check if inv is full again
-if (inv_freespace(inv) < 1) {
+// check if inv is full again (both stack, so only stop when neither fits)
+if (inv_itemspace(inv, raw_shrimp, 1, inv_size(inv)) = false & inv_itemspace(inv, raw_anchovies, 1, inv_size(inv)) = false) {
     anim(null, 0);
     ~mesbox("You can't carry any more fish.");
     return;

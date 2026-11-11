@@ -9,24 +9,20 @@ if (last_useitem = tinderbox) {
     ~displaymessage(^dm_default);
 }
 
-// Idlescape: keep a fire alive by feeding it more logs. The fire loc is re-armed with a fresh
-// duration, and ~fire_ashes keeps waiting until the fire is actually gone.
-[oplocu,fire]
-if (oc_category(last_useitem) ! category_22 | last_useitem = hollow_bark) {
-    ~displaymessage(^dm_default);
+// Idlescape: keep a fire alive by feeding it more logs. Called from the cooking fire trigger,
+// because fires are a category of loc and a dedicated oplocu,fire trigger would shadow cooking.
+[proc,feed_fire](obj $log)
+def_int $level = oc_param($log, levelrequire);
+if (stat(firemaking) < $level) {
+    mes("You need a Firemaking level of <tostring($level)> to burn <oc_name($log)>.");
     return;
 }
-def_int $feed_level = oc_param(last_useitem, levelrequire);
-if (stat(firemaking) < $feed_level) {
-    mes("You need a Firemaking level of <tostring($feed_level)> to burn <oc_name(last_useitem)>.");
-    return;
-}
-inv_del(inv, last_useitem, 1);
-stat_advance(firemaking, oc_param(last_useitem, productexp));
+inv_del(inv, $log, 1);
+stat_advance(firemaking, oc_param($log, productexp));
 anim(human_createfire, 0);
 sound_synth(fire_lit, 1, 0);
 mes("The fire burns brighter.");
-loc_change(fire, calc(100 + random(100)));
+loc_change(loc_type, calc(100 + random(100)));
 
 // opheldu for logs is handled in fletching
 [opheldu,tinderbox]
