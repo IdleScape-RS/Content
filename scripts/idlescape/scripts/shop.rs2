@@ -1,0 +1,3 @@
+// Idlescape: the RuneScape Guide is the shopkeeper for the starting hall.
+[opnpc3,newbie_basics_instructor]
+~openshop(idlescape_shop, 1000, 1000, 0, "Idlescape Supplies");

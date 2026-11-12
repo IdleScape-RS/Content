@@ -18,14 +18,11 @@ sound_synth(door_open, 1, 0);
 p_delay(0);
 
 // Survival Tutor Gate
+// Idlescape: this fence is the edge of the starting area. It is a real gate that opens at 300 total level.
 [oploc1,_tutorial_gate]
-if (%tutorial < ^newbie_survival_instructor_complete) {
-    ~mesbox("You need to talk to the Survival Guide and complete her tasks before you are allowed to proceed through this gate.");
+if (~total_level < 300) {
+    ~mesbox("You cannot go here until you're past 300 total level.|Your total level is <tostring(~total_level)>.");
     return;
-}
-if (%tutorial = ^newbie_survival_instructor_complete) {
-    %tutorial = ^tutorial_opened_gate_to_chef;
-    ~set_tutorial_progress;
 }
 if(coordx(coord) <= coordx(loc_coord)) {
     p_teleport(movecoord(loc_coord, 1, 0, 0));

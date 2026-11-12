@@ -6,6 +6,12 @@
 [ai_timer,_slimeyfish] @move_fishing_spot;
 
 [label,move_fishing_spot]
+// Idlescape: a spot with no fishing_movement_enum has nowhere to move to. Upstream teleported it to
+// its own tile, which still called npc_delay(2) - and a delayed npc refuses interactions, so it
+// silently stopped an idle fisher every few minutes. Static spots just stay put now.
+if (nc_param(npc_type, fishing_movement_enum) = null) {
+    return;
+}
 def_coord $rand_coord = ~fishing_spot_random_coord(npc_type);
 npc_delay(2);
 npc_tele($rand_coord);

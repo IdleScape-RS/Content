@@ -138,6 +138,8 @@ cost=5
 iop1=Eat
 weight=100g
 category=category_58
+// Idlescape: fish stack so an idle fisher never stops at 28.
+stackable=yes
 
 [raw_shrimp]
 name=Raw shrimps
@@ -154,6 +156,8 @@ cost=5
 weight=120g
 category=category_57
 param=fishing_struct,fishing_struct_shrimps
+// Idlescape: fish stack so an idle fisher never stops at 28.
+stackable=yes
 
 [anchovies]
 name=Anchovies
@@ -171,6 +175,8 @@ iop1=Eat
 weight=100g
 category=category_58
 param=pizza_topping_struct,anchovy_topping
+// Idlescape: fish stack so an idle fisher never stops at 28.
+stackable=yes
 
 [raw_anchovies]
 name=Raw anchovies
@@ -187,6 +193,8 @@ cost=15
 weight=120g
 category=category_57
 param=fishing_struct,fishing_struct_anchovies
+// Idlescape: fish stack so an idle fisher never stops at 28.
+stackable=yes
 
 [burntfish1]
 name=Burnt fish
@@ -202,6 +210,8 @@ recol2d=7399
 cost=1
 weight=80g
 category=category_116
+// Idlescape: fish stack so an idle fisher never stops at 28.
+stackable=yes
 
 [tbwt_raw_karambwan]
 name=Raw karambwan

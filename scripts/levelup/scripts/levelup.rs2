@@ -52,7 +52,9 @@ if ($has_unlocks = false) {
 if_settext(db_getfield($unlock_row, levelup:title, 0), "@dbl@<$message>");
 if_settext(db_getfield($unlock_row, levelup:body, 0), "<db_getfield($unlock_row, levelup:level_prefix, 0)> <tostring($level)>.");
 if_openchat(db_getfield($unlock_row, levelup:interface, 0));
-p_pausebutton;
+// Idlescape: no p_pausebutton here. Levelling up used to hold the player until they clicked the
+// dialogue box away, which stopped an idle skilling loop dead. The box still appears; it just
+// does not gate the player.
 if ($has_unlocks = false) {
     return;
 }

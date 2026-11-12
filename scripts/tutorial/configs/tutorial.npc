@@ -101,11 +101,12 @@ wanderrange=2
 
 [newbie_basics_instructor]
 vislevel=hide
-name=RuneScape Guide
-desc=Your introduction to the world of RuneScape.
+name=Idle Guide
+desc=Explains how Idlescape works.
 walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
 readyanim=human_ready
 op1=Talk-to
+op3=Trade
 alwaysontop=yes
 model1=man_head_bald
 model2=man_jaw_goaty
@@ -131,7 +132,7 @@ recol5s=12677
 recol5d=16417
 recol6s=2340
 recol6d=16417
-wanderrange=2
+wanderrange=0
 
 [newbie_magic_instructor]
 vislevel=hide
@@ -312,17 +313,21 @@ param=death_drop,newbiebones
 vislevel=hide
 name=Fishing spot
 desc=I can see fish swimming in the water.
+// Idlescape: this is a real net fishing spot, so it uses the saltfish category and skill_fishing.
 op1=Net
 op3=hidden
+op4=hidden
+op5=hidden
 minimap=no
 readyanim=fishingspot_ready
 walkanim=fishingspot_walk
 model1=outdoorfurniture_loc_42
-category=category_453
+defaultmode=none
 wanderrange=0
 maxrange=50
 moverestrict=nomove
-defaultmode=none
+timer=1
+category=saltfish
 
 [noobbanker]
 vislevel=hide

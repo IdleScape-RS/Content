@@ -9,6 +9,21 @@ if (last_useitem = tinderbox) {
     ~displaymessage(^dm_default);
 }
 
+// Idlescape: keep a fire alive by feeding it more logs. Called from the cooking fire trigger,
+// because fires are a category of loc and a dedicated oplocu,fire trigger would shadow cooking.
+[proc,feed_fire](obj $log)
+def_int $level = oc_param($log, levelrequire);
+if (stat(firemaking) < $level) {
+    mes("You need a Firemaking level of <tostring($level)> to burn <oc_name($log)>.");
+    return;
+}
+inv_del(inv, $log, 1);
+stat_advance(firemaking, oc_param($log, productexp));
+anim(human_createfire, 0);
+sound_synth(fire_lit, 1, 0);
+mes("The fire burns brighter.");
+loc_change(loc_type, calc(100 + random(100)));
+
 // opheldu for logs is handled in fletching
 [opheldu,tinderbox]
 if (last_useitem = newbielogs) {
@@ -126,8 +141,14 @@ mes("The fire catches and the logs begin to burn.");
 def_int $delay = calc(100 + random(100)); // firemaking length: https://archive.is/zF5hb
 // Temp note: dur does not need updated
 loc_add($fire_coord, fire, 1, centrepiece_straight, $delay);
+~fire_ashes($fire_coord);
 
-world_delay($delay);
+// Idlescape: because a fire can be fed with more logs, its lifetime is not fixed. Poll until the
+// fire loc is actually gone, then leave the ashes behind.
+[proc,fire_ashes](coord $fire_coord)
+while (loc_find($fire_coord, fire) = true) {
+    world_delay(10);
+}
 obj_addall($fire_coord, ashes, 1, 100);
 
 [proc,area_allow_loc_add](coord $coord)(boolean)

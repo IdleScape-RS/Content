@@ -38,7 +38,7 @@ if (stat(woodcutting) < $level) {
     return;
 }
 // check inv space 2nd
-if (inv_freespace(inv) < 1) {
+if (inv_itemspace(inv, $product, 1, inv_size(inv)) = false) {
     anim(null, 0);
     // osrs specifies the log name, but old videos do not.
     // https://youtu.be/str4rRd9mt8?t=152
@@ -46,12 +46,6 @@ if (inv_freespace(inv) < 1) {
     return;
 }
 
-if (afk_event = ^true) {
-    if(loc_param(ent) = null) {
-        @macro_randomwoodcuttingachey;
-    }
-    @macro_randomwoodcutting;
-}
 if (%action_delay < map_clock) {
     if ($level > 0 & ~woodcutting_axe_checker(true) = null) {
         return;
@@ -143,7 +137,7 @@ if (stat(woodcutting) < $level) {
     return;
 }
 // check inv space
-if (inv_freespace(inv) < 1) {
+if (inv_itemspace(inv, $product, 1, inv_size(inv)) = false) {
     anim(null, 0);
     // https://youtu.be/str4rRd9mt8?t=152
     mes("Your inventory is too full to hold any more logs.");
@@ -164,28 +158,17 @@ p_oploc(3);
 def_int $tree_chance_low;
 def_int $tree_chance_high;
 $tree_chance_low, $tree_chance_high = ~woodcutting_successchance($data, $axe);
-def_int $respawnrate = db_getfield($data, woodcutting_trees:respawnrate, 0);
-def_int $deplete_chance = 8; // 1/8 chance to deplete
-// if normal tree, add some variance
-// scuffed way of doing it but it works
-if ($respawnrate = 0) {
-    $respawnrate = add(120, random(80));
-    $deplete_chance = 0;
-}
+// Idlescape is an idle game: trees never deplete, so the chop loop keeps running while the player
+// is logged in. That is why no loc_change to a stump happens here.
 if (stat_random(woodcutting, $tree_chance_low, $tree_chance_high) = true) {
     def_namedobj $product = db_getfield($data, woodcutting_trees:product, 0);
+    // 289's Miscellania intercept stays, minus the depletion: Idlescape trees never become stumps.
     if (~leif_intercept_wood($product) = true) {
         // Intercept for Miscellania, you don't get the wood.
     } else {
         mes("You get some <lowercase(oc_name($product))>.");
         stat_advance(woodcutting, db_getfield($data, woodcutting_trees:productexp, 0));
         inv_add(inv, $product, 1);
-    }
-    if (random($deplete_chance) = 0) {
-        $respawnrate = ~scale_by_playercount($respawnrate);
-        loc_change(loc_param(next_loc_stage), $respawnrate);
-        anim(null, 0);
-        return;
     }
 }
 p_oploc(3);

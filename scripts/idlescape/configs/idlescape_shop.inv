@@ -1,0 +1,17 @@
+[idlescape_shop]
+// Idlescape: the only shop. Everything is bought and sold at face value (see the openshop call in
+// scripts/idlescape/scripts/shop.rs2), and allstock lets players dump their logs here.
+scope=shared
+size=12
+restock=yes
+stackall=yes
+allstock=yes
+stock1=iron_axe,10,100
+stock2=steel_axe,10,100
+stock3=black_axe,10,100
+stock4=mithril_axe,10,100
+stock5=adamant_axe,10,100
+stock6=rune_axe,10,100
+stock7=tinderbox,10,100
+stock8=net,10,100
+stock9=bronze_axe,10,100

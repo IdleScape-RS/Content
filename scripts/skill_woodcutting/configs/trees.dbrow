@@ -28,6 +28,9 @@ data=tree,regicide_tree_large3
 data=tree,regicide_tree_small
 data=tree,mm_bush_kharazi_jungle_tree1
 data=tree,mm_bush_kharazi_jungle_tree2
+// Idlescape: the tutorial island trees are ordinary trees in the spawn area.
+data=tree,newbietree
+data=tree,newbietree2
 data=levelrequired,0
 data=productexp,250
 data=product,logs
@@ -85,6 +88,7 @@ data=successchance,rune_axe,224,700
 [oak_tree_table]
 table=woodcutting_trees
 data=tree,oaktree
+data=tree,newbieoaktree
 data=levelrequired,15
 data=productexp,375
 data=product,oak_logs

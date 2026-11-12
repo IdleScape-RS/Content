@@ -35,7 +35,8 @@ param=axe_head,macro_iron_hatchethead
 [bronze_axe]
 name=Bronze axe
 desc=A woodcutters axe.
-cost=16
+// Idlescape: free, so a player who loses theirs can always pick another one up from the shop.
+cost=0
 model=inv_hatchet
 recol1s=15855
 recol1d=8354
