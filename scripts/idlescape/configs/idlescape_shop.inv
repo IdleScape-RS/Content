@@ -6,12 +6,14 @@ size=12
 restock=yes
 stackall=yes
 allstock=yes
-stock1=iron_axe,10,100
-stock2=steel_axe,10,100
-stock3=black_axe,10,100
-stock4=mithril_axe,10,100
-stock5=adamant_axe,10,100
-stock6=rune_axe,10,100
-stock7=tinderbox,10,100
-stock8=net,10,100
-stock9=bronze_axe,10,100
+// Idlescape: the free bronze axe sits in the first slot, so the thing a new player wants
+// is the leftmost item in the shop.
+stock1=bronze_axe,10,100
+stock2=iron_axe,10,100
+stock3=steel_axe,10,100
+stock4=black_axe,10,100
+stock5=mithril_axe,10,100
+stock6=adamant_axe,10,100
+stock7=rune_axe,10,100
+stock8=tinderbox,10,100
+stock9=net,10,100
