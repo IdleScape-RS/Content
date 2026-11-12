@@ -1,0 +1,6 @@
+[idlescape_hand]
+// Idlescape: a one slot hidden hand. Firemaking takes a single log out of a stack into it and drops
+// that, because dropslot is per slot and logs stack - dropping the slot burned the whole pile.
+scope=temp
+size=1
+dummyinv=yes

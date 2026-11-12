@@ -2,6 +2,11 @@
 [opobj4,_category_22]
 @light_logs_ground;
 
+// Idlescape: the logs config advertises "Light" as op4, so honour it. It behaved like a use-item on
+// the tinderbox and did nothing, and it is the obvious way to light a fire from the inventory.
+[opheld4,_category_22]
+@light_logs_inv(last_slot);
+
 [opobju,_category_22]
 if (last_useitem = tinderbox) {
     @light_logs_ground;
@@ -9,20 +14,54 @@ if (last_useitem = tinderbox) {
     ~displaymessage(^dm_default);
 }
 
-// Idlescape: keep a fire alive by feeding it more logs. Called from the cooking fire trigger,
-// because fires are a category of loc and a dedicated oplocu,fire trigger would shadow cooking.
+// Idlescape: feeding a fire. Feed is its own loc op so that p_oploc can replay it, which is what
+// makes this loop: one log per cycle while you have logs left, paced like lighting a fire. Reached
+// by using logs on a fire, or by right clicking the fire and choosing Feed.
+[oploc2,_cooking_fire]
+def_int $i = 0;
+def_obj $log = null;
+while ($log = null & $i < inv_size(inv)) {
+    def_obj $item = inv_getobj(inv, $i);
+    if ($item ! null & oc_category($item) = category_22 & $item ! hollow_bark) {
+        $log = $item;
+    }
+    $i = calc($i + 1);
+}
+
+if ($log = null) {
+    mes("You have no logs to feed the fire.");
+    return;
+}
+
+~feed_fire($log);
+
 [proc,feed_fire](obj $log)
+// the fire can burn out underneath a loop that is replaying this op
+if (loc_find(loc_coord, loc_type) = false) {
+    return;
+}
+
 def_int $level = oc_param($log, levelrequire);
 if (stat(firemaking) < $level) {
     mes("You need a Firemaking level of <tostring($level)> to burn <oc_name($log)>.");
     return;
 }
-inv_del(inv, $log, 1);
-stat_advance(firemaking, oc_param($log, productexp));
-anim(human_createfire, 0);
-sound_synth(fire_lit, 1, 0);
-mes("The fire burns brighter.");
-loc_change(loc_type, calc(100 + random(100)));
+
+if (%action_delay < map_clock) {
+    %action_delay = calc(map_clock + 3);
+} else if (%action_delay = map_clock) {
+    inv_del(inv, $log, 1);
+    stat_advance(firemaking, oc_param($log, productexp));
+    anim(human_createfire, 0);
+    sound_synth(fire_lit, 1, 0);
+    mes("The fire burns brighter.");
+    loc_change(loc_type, calc(100 + random(100)));
+    %action_delay = calc(map_clock + 3);
+}
+
+if (inv_total(inv, $log) > 0) {
+    p_oploc(2);
+}
 
 // opheldu for logs is handled in fletching
 [opheldu,tinderbox]
@@ -109,30 +148,19 @@ if(inv_total(inv, tinderbox) < 1) {
     mes("You need a tinderbox to light a fire.");
     return;
 }
-inv_dropslot(inv, coord, $slot, ^lootdrop_duration);
-if (%action_delay < map_clock) {
-    p_stopaction;
-    anim(human_createfire, 0);
-    sound_synth(tinderbox_strike, 1, 0);
-    mes("You attempt to light the logs.");
-    %action_delay = calc(map_clock + 3);
-} else if (%action_delay = map_clock) {
-    if(stat_random(firemaking, 64, 512) = true) { // firemaking roll
-        %action_delay = calc(map_clock + 4);
-        ~push_player(obj_coord);
-        ~firemaking_success(obj_coord, $log); // if fully blocked then just light the log and dont move
-        return;
-    } else {
-        // if fails, then reattempt to light
-        anim(human_createfire, 0);
-        sound_synth(tinderbox_strike, 1, 0);
-        %action_delay = calc(map_clock + 4);
-    }
-}
+// Idlescape: logs stack, so the slot cannot simply be dropped to be lit - that burned the whole
+// pile in one go. Move a single log into the hidden hand and drop that instead, then let the ground
+// flow do the attempt, its retry, and the fire.
+inv_moveitem_uncert(inv, idlescape_hand, $log, 1);
+inv_dropslot(idlescape_hand, coord, 0, ^lootdrop_duration);
 p_opobj(4);
 
+// a log lying on the ground burns away (the whole pile, which is what a dropped stack is)
 [proc,firemaking_success](coord $fire_coord, obj $log)
 obj_del;
+~create_fire($fire_coord, $log);
+
+[proc,create_fire](coord $fire_coord, obj $log)
 stat_advance(firemaking, oc_param($log, productexp));
 sound_synth(fire_lit, 1, 0);
 facesquare($fire_coord);

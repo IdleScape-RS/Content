@@ -9,9 +9,10 @@ if(loc_type = viking_house_fire | loc_type = viking_longhall_fire) {
 if(oc_param(last_useitem, unlit_arrow) = ^true) { // might not work on every fire?
     @light_firearrow(last_useitem);
 } else if (oc_category(last_useitem) = category_22 & last_useitem ! hollow_bark) {
-    // Idlescape: feeding logs to a fire keeps it burning. This lives here because the fire loc
-    // trigger is category based, so a separate oplocu,fire trigger would shadow it.
-    ~feed_fire(last_useitem);
+    // Idlescape: using logs on a fire feeds it. Hand off to the fire's Feed op, which loops while you
+    // have logs (see [oploc2,_cooking_fire]). This lives here because the fire trigger is category
+    // based, so a separate oplocu,fire trigger would shadow cooking.
+    p_oploc(2);
 } else {
     // Idlescape: the tutorial island cooking lesson is gone, so cooking always uses the real skill.
     @attempt_cook_item(last_useitem);

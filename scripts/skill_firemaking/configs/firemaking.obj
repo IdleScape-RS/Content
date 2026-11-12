@@ -197,7 +197,8 @@ param=funeral_pyre_struct,pyre_willow_logs
 stackable=yes
 name=Oak logs
 desc=Logs cut from an oak tree.
-cost=20
+// Idlescape: 2gp, so oaks stay a small step up from plain logs rather than a money printer.
+cost=2
 model=inv_woodlogs
 recol1s=15617
 recol1d=14659

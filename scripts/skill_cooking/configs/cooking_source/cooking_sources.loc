@@ -65,4 +65,7 @@ blockwalk=no
 blockrange=no
 ambient=75
 contrast=75
+// Idlescape: feeding logs is its own op so it can be repeated with p_oploc; there is no replay
+// opcode for "use item on loc", which is why the loop cannot hang off the tinderbox or a use-item.
+op2=Feed
 category=cooking_fire
