@@ -14,7 +14,9 @@ if (%action_delay < map_clock) {
     sound_synth(chest_open, 1, 0);
     mes("You pick the lock and find a coin inside.");
     inv_add(inv, coins, 1);
-    stat_advance(thieving, 15);
+    // stat_advance takes tenths: the tree and firemaking tables store 250 for 25 xp and 400 for 40,
+    // so 15 xp is 150 here. 15 gave 1.5, which the client rounded to "2".
+    stat_advance(thieving, 150);
     %action_delay = calc(map_clock + 3);
 }
 p_oploc(1);
