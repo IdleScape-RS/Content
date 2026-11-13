@@ -1,0 +1,20 @@
+// Idlescape: the chest in the starting hall. The same idea as the locked chests in Ardougne, except
+// it loops so it can be left running, and it always pays out a single coin. The loop is p_oploc,
+// which replays this loc op, so the chest is never swapped for an opened/looted loc the way the
+// Ardougne chests are - a loc change would end the loop.
+[oploc1,idlescape_chest]
+if (%action_delay < map_clock) {
+    p_stopaction;
+    anim(human_lockedchest, 0);
+    sound_synth(locked, 1, 0);
+    mes("You attempt to pick the lock.");
+    %action_delay = calc(map_clock + 3);
+} else if (%action_delay = map_clock) {
+    anim(human_openchest, 0);
+    sound_synth(chest_open, 1, 0);
+    mes("You pick the lock and find a coin inside.");
+    inv_add(inv, coins, 1);
+    stat_advance(thieving, 15);
+    %action_delay = calc(map_clock + 3);
+}
+p_oploc(1);

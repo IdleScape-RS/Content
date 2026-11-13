@@ -1,0 +1,8 @@
+[idlescape_chest]
+name=Chest
+desc=I wonder what's inside it.
+model=furniture_chestclosed
+active=yes
+// Idlescape: the chest in the starting hall. Pick lock, a coin a time, and it never runs out - see
+// scripts/idlescape/scripts/chest.rs2. No forceapproach: the only walkable side is the south one.
+op1=Pick lock
