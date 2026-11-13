@@ -1,23 +1,23 @@
 [label,levelup_fishing]
 //Fishing level up unlock messages
 switch_int(stat_base(fishing)) {
-    case 5 : mes("You can now try fishing for @dbl@sardines. Members can now try fishing for @dbl@karambwanji.");
-    case 10 : mes("You can now try fishing for @dbl@Herring.");
-    case 15 : mes("You can now try to net @dbl@Anchovies.");
-    case 16 : mes("You can now try fishing for @dbl@Mackerel@bla@, @dbl@Oysters@bla@ and @bdl@Caskets@bla@ with a large net.");
-    case 20 : mes("You can now try fly fishing for @dbl@Trout.");
-    case 23 : mes("Members can now try fishing for @dbl@Cod with a large net.");
-    case 25 : mes("You can now try fishing for @dbl@Pike.");
-    case 28 : mes("Members can now try fishing for @dbl@slimey eels.");
-    case 30 : mes("You can now try fly fishing for @dbl@Salmon.");
-    case 35 : mes("You can now try harpooning @dbl@Tuna.");
-    case 40 : mes("You can now try to catch @dbl@Lobsters.");
-    case 46 : mes("Members can now try fishing for @dbl@Sea Bass with a large net.");
-    case 50 : mes("You can now try harpooning @dbl@Swordfish.");
-    case 53 : mes("Members can now try catching @dbl@Lava Eels.");
-    case 65 : mes("Members can now try catching @dbl@karambwan.");
-    case 68 : mes("Members are now qualified to enter the @dbl@Fishing Guild.");
-    case 76 : mes("Members can now try harpooning @dbl@Sharks."); //imgur.com/SvV4b4p
-    case 79 : mes("Members can now catch @dbl@Sea Turtles on the Trawler. "); //imgur.com/T0raUc4
-    case 81 : mes("Members can now catch @dbl@Manta Rays on the Trawler. "); //imgur.com/DVv0WDM
+    case 5 : mes("You can now try fishing for sardines. Members can now try fishing for karambwanji.");
+    case 10 : mes("You can now try fishing for Herring.");
+    case 15 : mes("You can now try to net Anchovies.");
+    case 16 : mes("You can now try fishing for Mackerel, Oysters and Caskets with a large net.");
+    case 20 : mes("You can now try fly fishing for Trout.");
+    case 23 : mes("Members can now try fishing for Cod with a large net.");
+    case 25 : mes("You can now try fishing for Pike.");
+    case 28 : mes("Members can now try fishing for slimey eels.");
+    case 30 : mes("You can now try fly fishing for Salmon.");
+    case 35 : mes("You can now try harpooning Tuna.");
+    case 40 : mes("You can now try to catch Lobsters.");
+    case 46 : mes("Members can now try fishing for Sea Bass with a large net.");
+    case 50 : mes("You can now try harpooning Swordfish.");
+    case 53 : mes("Members can now try catching Lava Eels.");
+    case 65 : mes("Members can now try catching karambwan.");
+    case 68 : mes("Members are now qualified to enter the Fishing Guild.");
+    case 76 : mes("Members can now try harpooning Sharks."); //imgur.com/SvV4b4p
+    case 79 : mes("Members can now catch Sea Turtles on the Trawler. "); //imgur.com/T0raUc4
+    case 81 : mes("Members can now catch Manta Rays on the Trawler. "); //imgur.com/DVv0WDM
 }

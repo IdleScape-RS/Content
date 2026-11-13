@@ -1,8 +1,8 @@
 [label,levelup_agility]
 // Agility level up unlock messages
 switch_int(stat_base(agility)) {
-    case 20 : mes("You can now pass medium level @dbl@Agility Arena@bla@ obstacles.");
-    case 35 : mes("You can now enter the @dbl@Barbarian Agility Course@bla@.");
-    case 40 : mes("You can now pass high level @dbl@Agility Arena@bla@ obstacles.");
-    case 52 : mes("You can now enter the @dbl@Wilderness Agility Course@bla@.");
+    case 20 : mes("You can now pass medium level Agility Arena obstacles.");
+    case 35 : mes("You can now enter the Barbarian Agility Course.");
+    case 40 : mes("You can now pass high level Agility Arena obstacles.");
+    case 52 : mes("You can now enter the Wilderness Agility Course.");
 }

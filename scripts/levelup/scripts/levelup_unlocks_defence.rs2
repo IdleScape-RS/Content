@@ -1,10 +1,10 @@
 [label,levelup_defence]
 //Defence level up unlock messgaes
 switch_int(stat_base(defence)) {
-    case 5 : mes("You can now wear @dbl@Steel Armour!");
-    case 10 : mes("You can now wear @dbl@Black Armour!");
-    case 20 : mes("You can now wear @dbl@Mithril Armour!");
-    case 30 : mes("You can now wear @dbl@Adamant Armour!");
-    case 40 : mes("You can now wear @dbl@Rune Armour!");
-    case 60 : mes("Members can now wear @dbl@Dragon Armour!"); //imgur.com/bpoMZgD
+    case 5 : mes("You can now wear Steel Armour!");
+    case 10 : mes("You can now wear Black Armour!");
+    case 20 : mes("You can now wear Mithril Armour!");
+    case 30 : mes("You can now wear Adamant Armour!");
+    case 40 : mes("You can now wear Rune Armour!");
+    case 60 : mes("Members can now wear Dragon Armour!"); //imgur.com/bpoMZgD
 }

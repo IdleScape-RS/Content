@@ -1,12 +1,12 @@
 [label,levelup_ranged]
 //Ranged level up unlock messages
 switch_int(stat_base(ranged)) {
-    case 5  : mes("You can now wield @dbl@Oak Bows@bla@ and members can wield @dbl@Steel Throwing Weapons@bla@.");
-    case 10 : mes("Members can now wield @dbl@Black Throwing Weapons@bla@.");
-    case 20 : mes("You can now wield @dbl@Willow Bows@bla@ and wear @dbl@Studded @dbl@Armour@bla@ and @dbl@Coifs@bla@, and members can now wield @dbl@Mithril Throwing Weapons@bla@.");
-    case 30 : mes("You can now wield @dbl@Maple Bows@bla@ and members can wield @dbl@Adamant Throwing Weapons@bla@.");
-    case 40 : mes("You can now wear @dbl@Green Dragonhide armour@bla@. Members can wield @dbl@Yew Bows@bla@ & @dbl@Rune Throwing Weapons @bla@and wear @dbl@ranger boots@bla@ and the @dbl@Robin Hood hat@bla@."); // https://i.imgur.com/wgcI7oD.png (2006)
-    case 50 : mes("Members can now wield @dbl@Magic Bows@bla@ and wear @dbl@Blue Dragonhide armour@bla@."); // https://runescapenonbiri.up.seesaa.net/image/rangup.jpg (2005)
-    case 60 : mes("Members can now wear @dbl@Red Dragonhide armour@bla@."); // https://i.imgur.com/jlpLjht.png (2005)
-    case 70 : mes("Members can now wear @dbl@Black Dragonhide armour@bla@."); // https://i.imgur.com/qeFzWO7.png (2005)
+    case 5  : mes("You can now wield Oak Bows and members can wield Steel Throwing Weapons.");
+    case 10 : mes("Members can now wield Black Throwing Weapons.");
+    case 20 : mes("You can now wield Willow Bows and wear Studded Armour and Coifs, and members can now wield Mithril Throwing Weapons.");
+    case 30 : mes("You can now wield Maple Bows and members can wield Adamant Throwing Weapons.");
+    case 40 : mes("You can now wear Green Dragonhide armour. Members can wield Yew Bows & Rune Throwing Weapons and wear ranger boots and the Robin Hood hat."); // https://i.imgur.com/wgcI7oD.png (2006)
+    case 50 : mes("Members can now wield Magic Bows and wear Blue Dragonhide armour."); // https://runescapenonbiri.up.seesaa.net/image/rangup.jpg (2005)
+    case 60 : mes("Members can now wear Red Dragonhide armour."); // https://i.imgur.com/jlpLjht.png (2005)
+    case 70 : mes("Members can now wear Black Dragonhide armour."); // https://i.imgur.com/qeFzWO7.png (2005)
 }

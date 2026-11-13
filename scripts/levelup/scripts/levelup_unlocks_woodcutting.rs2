@@ -2,10 +2,10 @@
 //Woodcutting level up unlock messages
 switch_int(stat_base(woodcutting)) {
     // axe requirements were not a thing originally, added mid-2005 maybe?
-    case 15 : mes("You can now cut down @dbl@Oak Trees.");
-    case 30 : mes("You can now cut down @dbl@Willow Trees.");
-    case 40 : mes("@dbl@~ This is one of the requirements of the @dre@FREMENNIK TRIALS@dbl@. @dbl@~");
-    case 45 : mes("You can now cut down @dbl@Maple Trees.");
-    case 60 : mes("You can now cut down @dbl@Yew Trees.");
-    case 75 : mes("Members can now cut down @dbl@Magic Trees.");
+    case 15 : mes("You can now cut down Oak Trees.");
+    case 30 : mes("You can now cut down Willow Trees.");
+    case 40 : mes("~ This is one of the requirements of the FREMENNIK TRIALS. ~");
+    case 45 : mes("You can now cut down Maple Trees.");
+    case 60 : mes("You can now cut down Yew Trees.");
+    case 75 : mes("Members can now cut down Magic Trees.");
 }

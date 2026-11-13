@@ -1,9 +1,9 @@
 [label,levelup_firemaking]
 //firemaking level up unlock messages
 switch_int(stat_base(firemaking)) {
-    case 15 : mes("You can now burn @dbl@Oak Logs.");
-    case 30 : mes("You can now burn @dbl@Willow Logs.");
-    case 45 : mes("You can now burn @dbl@Maple Logs.");
-    case 60 : mes("You can now burn @dbl@Yew Logs.");
-    case 75 : mes("Members can now burn @dbl@Magic Logs.");
+    case 15 : mes("You can now burn Oak Logs.");
+    case 30 : mes("You can now burn Willow Logs.");
+    case 45 : mes("You can now burn Maple Logs.");
+    case 60 : mes("You can now burn Yew Logs.");
+    case 75 : mes("Members can now burn Magic Logs.");
 }

@@ -1,96 +1,96 @@
 [label,levelup_smithing]
 //Smithing level up unlock messages
 switch_int(stat_base(smithing)) {
-    case 2 : mes("You can now make @dbl@Bronze Maces.");
-    case 3 : mes("You can now make @dbl@Bronze Medium Helms.");
-    case 4 : mes("You can now make @dbl@Bronze Short Swords@bla@ and members can make @dbl@Bronze Dart Tips@bla@ and @dbl@Bronze Wire.");
-    case 5 : mes("You can now make @dbl@Bronze Scimitars@bla@ and members can make @dbl@Bronze Arrow Heads.");
-    case 6 : mes("You can now make @dbl@Bronze Long Swords.");
-    case 7 : mes("You can now make @dbl@Bronze Full Helms@bla@ and members can make @dbl@Bronze Throwing Knives.");
-    case 8 : mes("You can now make @dbl@Bronze Square Shields.");
-    case 9 : mes("You can now make @dbl@Bronze Warhammers.");
-    case 10 : mes("You can now make @dbl@Bronze Battle Axes.");
-    case 11 : mes("You can now make @dbl@Bronze Chainmail Bodies.");
-    case 12 : mes("You can now make @dbl@Bronze Kite Shields.");
-    case 13 : mes("You can now make @dbl@Bronze claws.");
-    case 14 : mes("You can now make @dbl@Bronze Two Handed Swords.");
-    case 15 : mes("You can now make @dbl@Iron Daggers.");
-    case 16 : mes("You can now make @dbl@Bronze Plate Legs@bla@, @dbl@Bronze plate skirts@bla@ and @dbl@Iron Axes."); // https://i.imgur.com/qMAZcT9.png
-    case 17 : mes("You can now make @dbl@Iron Maces.");
-    case 18 : mes(" You can now make @dbl@Bronze Plate Bodies and Iron  Medium Helms.   ");
-    case 19 : mes("You can now make @dbl@Iron Short Swords@bla@ and members can make @dbl@Iron Dart Tips.");
-    case 20 : mes("You can now smelt @dbl@Silver Ore@bla@ and make @dbl@Iron Scimitars@bla@ and members can make @dbl@Iron Arrow Heads.");
-    case 21 : mes("You can now make @dbl@Iron Long Swords.");
-    case 22 : mes("You can now make @dbl@Iron Full Helms@bla@ and members can make @dbl@Iron Throwing Knives.");
-    case 23 : mes("You can now make @dbl@Iron Square Shields.");
-    case 24 : mes("You can now make @dbl@Iron Warhammers.");
-    case 25 : mes("You can now make @dbl@Iron Battleaxes.");
-    case 26 : mes("You can now make @dbl@Iron Chainmail Bodies.");
-    case 27 : mes("You can now make @dbl@Iron Kite Shields.");
-    case 28 : mes("You can now make @dbl@Iron claws.");
-    case 29 : mes("You can now make @dbl@Iron Two Handed Swords.");
-    case 30 : mes("You can now make @dbl@Steel Daggers.");
-    case 31 : mes("You can now make @dbl@Iron Plate Legs@bla@, @dbl@Iron plate skirts @bla@and @dbl@Steel Axes."); // https://i.imgur.com/H2sx0gZ.png
-    case 32 : mes("You can now make @dbl@Steel Maces.");
-    case 33 : mes(" You can now make @dbl@Iron Plate Bodies and Steel  Medium Helms.   ");
-    case 34 : mes("You can now make @dbl@Steel Short Swords@bla@ and members can make @dbl@Steel Dart Tips.");
-    case 35 : mes("You can now make @dbl@Steel Scimitars and members can make @dbl@Steel Arrow Heads.");
-    case 36 : mes("You can now make @dbl@Steel Long Swords@bla@. Members can make @dbl@Steel Studs.");
-    case 37 : mes("You can now make @dbl@Steel Full Helms@bla@ and members can make @dbl@Steel Throwing Knives.");
-    case 38 : mes("You can now make @dbl@Steel Square Shields.");
-    case 39 : mes("You can now make @dbl@Steel Warhammers.");
-    case 40 : mes("You can now smelt @dbl@Gold Ore@bla@ and make @dbl@Steel Battleaxes.");
-    case 41 : mes("You can now make @dbl@Steel Chainmail Bodies.");
-    case 42 : mes("You can now make @dbl@Steel Kite Shields.");
-    case 43 : mes("You can now make @dbl@Steel claws.");
-    case 44 : mes("You can now make @dbl@Steel Two Handed Swords.");
-    case 46 : mes("You can now make @dbl@Steel Plate Legs@bla@ and @dbl@Steel plate skirts.");
-    case 48 : mes("You can now make @dbl@Steel Plate Bodies.");
-    case 50 : mes("You can now make @dbl@Mithril Daggers.");
-    case 51 : mes("You can now make @dbl@Mithril Axes.");
-    case 52 : mes("You can now make @dbl@Mithril Maces.");
-    case 53 : mes("You can now make @dbl@Mithril Medium Helms.");
-    case 54 : mes("You can now make @dbl@Mithril Short Swords@bla@ and members can make @dbl@Mithril Dart Tips.");
-    case 55 : mes("You can now make @dbl@Mithril Scimitars@bla@ and members can make @dbl@Mithril Arrow Heads.");
-    case 56 : mes("You can now make @dbl@Mithril Long Swords.");
-    case 57 : mes("You can now make @dbl@Mithril Full Helms@bla@ and members can make @dbl@Mithril Throwing Knives.");
-    case 58 : mes("You can now make @dbl@Mithril Square Shields.");
-    case 59 : mes("You can now make @dbl@Mithril Warhammers.");
-    case 60 : mes("You can now make @dbl@Mithril Battleaxes.");
-    case 61 : mes("You can now make @dbl@Mithril Chainmail Bodies."); //imgur.com/J7orCyb
-    case 62 : mes("You can now make @dbl@Mithril Kite Shields."); //imgur.com/2mwJUWO
-    case 63 : mes("You can now make @dbl@Mithril claws.");
-    case 64 : mes("You can now make @dbl@Mithril Two Handed Swords."); //imgur.com/qMcRqiu
-    case 66 : mes("You can now make @dbl@Mithril Plate Legs@bla@ and @dbl@Mithril plate skirts."); // https://i.imgur.com/UjfgamE.png
-    case 68 : mes("You can now make @dbl@Mithril Plate Bodies.");
-    case 70 : mes("You can now make @dbl@Adamant Daggers."); //imgur.com/sXJ4fUC
-    case 71 : mes("You can now make @dbl@Adamant Axes.");
-    case 72 : mes("You can now make @dbl@Adamant Maces.");
-    case 73 : mes("You can now make @dbl@Adamant Medium Helms.");
-    case 74 : mes("You can now make @dbl@Adamant Short Swords@bla@ and members can make @dbl@Adamant Dart Tips.");
-    case 75 : mes("You can now make @dbl@Adamant Scimitars@bla@ and members can make @dbl@Adamant Arrow Heads.");
-    case 76 : mes("You can now make @dbl@Adamant Long Swords.");
-    case 77 : mes("You can now make @dbl@Adamant Full Helms@bla@ and members can make @dbl@Adamant Throwing Knives.");
-    case 78 : mes("You can now make @dbl@Adamant Square Shields.");
-    case 79 : mes("You can now make @dbl@Adamant Warhammers.");
-    case 80 : mes("You can now make @dbl@Adamant Battleaxes.");
-    case 81 : mes("You can now make @dbl@Adamant Chainmail Bodies.");
-    case 82 : mes("You can now make @dbl@Adamant Kite Shields.");
-    case 83 : mes("You can now make @dbl@Adamant claws.");
-    case 84 : mes("You can now make @dbl@Adamant Two Handed Swords.");
-    case 85 : mes("You can now make @dbl@Rune Daggers.");
-    case 86 : mes("You can now make @dbl@Adamant Plate Legs@bla@, @dbl@Adamant plate skirts@bla@ and @dbl@Rune Axes.");
-    case 87 : mes("You can now make @dbl@Rune Maces.");
-    case 88 : mes(" You can now make @dbl@Adamant Plate Bodies and Rune  Medium Helms.   "); //imgur.com/hYWReFZ
-    case 89 : mes("You can now make @dbl@Rune Short Swords@bla@ and members can make @dbl@Rune Dart Tips.");
-    case 90 : mes("You can now make @dbl@Rune Scimitars@bla@ and members can make @dbl@Rune Arrow Heads.");
-    case 91 : mes("You can now make @dbl@Rune Long Swords.");
-    case 92 : mes("You can now make @dbl@Rune Full Helms@bla@ and members can make @dbl@Rune Throwing Knives.");
-    case 93 : mes("You can now make @dbl@Rune Square Shields.");
-    case 94 : mes("You can now make @dbl@Rune Warhammers.");
-    case 95 : mes("You can now make @dbl@Rune Battleaxes.");
-    case 96 : mes("You can now make @dbl@Rune Chainmail Bodies.");
-    case 97 : mes("You can now make @dbl@Rune Kite Shields.");
-    case 98 : mes("You can now make @dbl@Rune claws.");
-    case 99 : mes("You can now make @dbl@Rune Two Handed Swords@bla@, @dbl@Plate Legs@bla@, @dbl@plate skirts@bla@, and @dbl@Plate Bodies."); // https://i.imgur.com/ooGMh4g.png
+    case 2 : mes("You can now make Bronze Maces.");
+    case 3 : mes("You can now make Bronze Medium Helms.");
+    case 4 : mes("You can now make Bronze Short Swords and members can make Bronze Dart Tips and Bronze Wire.");
+    case 5 : mes("You can now make Bronze Scimitars and members can make Bronze Arrow Heads.");
+    case 6 : mes("You can now make Bronze Long Swords.");
+    case 7 : mes("You can now make Bronze Full Helms and members can make Bronze Throwing Knives.");
+    case 8 : mes("You can now make Bronze Square Shields.");
+    case 9 : mes("You can now make Bronze Warhammers.");
+    case 10 : mes("You can now make Bronze Battle Axes.");
+    case 11 : mes("You can now make Bronze Chainmail Bodies.");
+    case 12 : mes("You can now make Bronze Kite Shields.");
+    case 13 : mes("You can now make Bronze claws.");
+    case 14 : mes("You can now make Bronze Two Handed Swords.");
+    case 15 : mes("You can now make Iron Daggers.");
+    case 16 : mes("You can now make Bronze Plate Legs, Bronze plate skirts and Iron Axes."); // https://i.imgur.com/qMAZcT9.png
+    case 17 : mes("You can now make Iron Maces.");
+    case 18 : mes(" You can now make Bronze Plate Bodies and Iron  Medium Helms.   ");
+    case 19 : mes("You can now make Iron Short Swords and members can make Iron Dart Tips.");
+    case 20 : mes("You can now smelt Silver Ore and make Iron Scimitars and members can make Iron Arrow Heads.");
+    case 21 : mes("You can now make Iron Long Swords.");
+    case 22 : mes("You can now make Iron Full Helms and members can make Iron Throwing Knives.");
+    case 23 : mes("You can now make Iron Square Shields.");
+    case 24 : mes("You can now make Iron Warhammers.");
+    case 25 : mes("You can now make Iron Battleaxes.");
+    case 26 : mes("You can now make Iron Chainmail Bodies.");
+    case 27 : mes("You can now make Iron Kite Shields.");
+    case 28 : mes("You can now make Iron claws.");
+    case 29 : mes("You can now make Iron Two Handed Swords.");
+    case 30 : mes("You can now make Steel Daggers.");
+    case 31 : mes("You can now make Iron Plate Legs, Iron plate skirts and Steel Axes."); // https://i.imgur.com/H2sx0gZ.png
+    case 32 : mes("You can now make Steel Maces.");
+    case 33 : mes(" You can now make Iron Plate Bodies and Steel  Medium Helms.   ");
+    case 34 : mes("You can now make Steel Short Swords and members can make Steel Dart Tips.");
+    case 35 : mes("You can now make Steel Scimitars and members can make Steel Arrow Heads.");
+    case 36 : mes("You can now make Steel Long Swords. Members can make Steel Studs.");
+    case 37 : mes("You can now make Steel Full Helms and members can make Steel Throwing Knives.");
+    case 38 : mes("You can now make Steel Square Shields.");
+    case 39 : mes("You can now make Steel Warhammers.");
+    case 40 : mes("You can now smelt Gold Ore and make Steel Battleaxes.");
+    case 41 : mes("You can now make Steel Chainmail Bodies.");
+    case 42 : mes("You can now make Steel Kite Shields.");
+    case 43 : mes("You can now make Steel claws.");
+    case 44 : mes("You can now make Steel Two Handed Swords.");
+    case 46 : mes("You can now make Steel Plate Legs and Steel plate skirts.");
+    case 48 : mes("You can now make Steel Plate Bodies.");
+    case 50 : mes("You can now make Mithril Daggers.");
+    case 51 : mes("You can now make Mithril Axes.");
+    case 52 : mes("You can now make Mithril Maces.");
+    case 53 : mes("You can now make Mithril Medium Helms.");
+    case 54 : mes("You can now make Mithril Short Swords and members can make Mithril Dart Tips.");
+    case 55 : mes("You can now make Mithril Scimitars and members can make Mithril Arrow Heads.");
+    case 56 : mes("You can now make Mithril Long Swords.");
+    case 57 : mes("You can now make Mithril Full Helms and members can make Mithril Throwing Knives.");
+    case 58 : mes("You can now make Mithril Square Shields.");
+    case 59 : mes("You can now make Mithril Warhammers.");
+    case 60 : mes("You can now make Mithril Battleaxes.");
+    case 61 : mes("You can now make Mithril Chainmail Bodies."); //imgur.com/J7orCyb
+    case 62 : mes("You can now make Mithril Kite Shields."); //imgur.com/2mwJUWO
+    case 63 : mes("You can now make Mithril claws.");
+    case 64 : mes("You can now make Mithril Two Handed Swords."); //imgur.com/qMcRqiu
+    case 66 : mes("You can now make Mithril Plate Legs and Mithril plate skirts."); // https://i.imgur.com/UjfgamE.png
+    case 68 : mes("You can now make Mithril Plate Bodies.");
+    case 70 : mes("You can now make Adamant Daggers."); //imgur.com/sXJ4fUC
+    case 71 : mes("You can now make Adamant Axes.");
+    case 72 : mes("You can now make Adamant Maces.");
+    case 73 : mes("You can now make Adamant Medium Helms.");
+    case 74 : mes("You can now make Adamant Short Swords and members can make Adamant Dart Tips.");
+    case 75 : mes("You can now make Adamant Scimitars and members can make Adamant Arrow Heads.");
+    case 76 : mes("You can now make Adamant Long Swords.");
+    case 77 : mes("You can now make Adamant Full Helms and members can make Adamant Throwing Knives.");
+    case 78 : mes("You can now make Adamant Square Shields.");
+    case 79 : mes("You can now make Adamant Warhammers.");
+    case 80 : mes("You can now make Adamant Battleaxes.");
+    case 81 : mes("You can now make Adamant Chainmail Bodies.");
+    case 82 : mes("You can now make Adamant Kite Shields.");
+    case 83 : mes("You can now make Adamant claws.");
+    case 84 : mes("You can now make Adamant Two Handed Swords.");
+    case 85 : mes("You can now make Rune Daggers.");
+    case 86 : mes("You can now make Adamant Plate Legs, Adamant plate skirts and Rune Axes.");
+    case 87 : mes("You can now make Rune Maces.");
+    case 88 : mes(" You can now make Adamant Plate Bodies and Rune  Medium Helms.   "); //imgur.com/hYWReFZ
+    case 89 : mes("You can now make Rune Short Swords and members can make Rune Dart Tips.");
+    case 90 : mes("You can now make Rune Scimitars and members can make Rune Arrow Heads.");
+    case 91 : mes("You can now make Rune Long Swords.");
+    case 92 : mes("You can now make Rune Full Helms and members can make Rune Throwing Knives.");
+    case 93 : mes("You can now make Rune Square Shields.");
+    case 94 : mes("You can now make Rune Warhammers.");
+    case 95 : mes("You can now make Rune Battleaxes.");
+    case 96 : mes("You can now make Rune Chainmail Bodies.");
+    case 97 : mes("You can now make Rune Kite Shields.");
+    case 98 : mes("You can now make Rune claws.");
+    case 99 : mes("You can now make Rune Two Handed Swords, Plate Legs, plate skirts, and Plate Bodies."); // https://i.imgur.com/ooGMh4g.png
 }

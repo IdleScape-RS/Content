@@ -1,28 +1,28 @@
 [label,levelup_fletching]
 //Fletching level up unlock messages
 switch_int(stat_base(fletching)) {
-    case 5 : mes("You can now make @dbl@Shortbows.");
-    case 10 : mes("You can now make @dbl@Longbows.");
-    case 15 : mes("You can now make @dbl@Iron Arrows.");
-    case 20 : mes("You can now make @dbl@Oak Shortbows.");
-    case 22 : mes("You can now make @dbl@Iron Darts.");
+    case 5 : mes("You can now make Shortbows.");
+    case 10 : mes("You can now make Longbows.");
+    case 15 : mes("You can now make Iron Arrows.");
+    case 20 : mes("You can now make Oak Shortbows.");
+    case 22 : mes("You can now make Iron Darts.");
     case 25 : 
-        mes("You can now make @dbl@Oak Longbows.");
-        mes("@dbl@~ This is one of the requirements of the @dre@FREMENNIK TRIALS@dbl@. @dbl@~");
-    case 30 : mes("You can now make @dbl@Steel Arrows.");
-    case 35 : mes("You can now make @dbl@Willow Shortbows.");
-    case 37 : mes("You can now make @dbl@Steel Darts.");
-    case 40 : mes("You can now make @dbl@Willow Longbows.");
-    case 45 : mes("You can now make @dbl@Mithril Arrows.");
-    case 50 : mes("You can now make @dbl@Maple Shortbows.");
-    case 52 : mes("You can now make @dbl@Mithril Darts.");
-    case 55 : mes("You can now make @dbl@Maple Longbows.");
-    case 60 : mes("You can now make @dbl@Adamant Arrows.");
-    case 65 : mes("You can now make @dbl@Yew Shortbows.");
-    case 67 : mes("You can now make @dbl@Adamant Darts.");
-    case 70 : mes("You can now make @dbl@Yew Longbows."); //imgur.com/3Er8U3m
-    case 75 : mes("You can now make @dbl@Rune Arrows.");
-    case 80 : mes("You can now make @dbl@Magic Shortbows.");
-    case 81 : mes("You can now make @dbl@Rune Darts.");
-    case 85 : mes("You can now make @dbl@Magic Longbows.");
+        mes("You can now make Oak Longbows.");
+        mes("~ This is one of the requirements of the FREMENNIK TRIALS. ~");
+    case 30 : mes("You can now make Steel Arrows.");
+    case 35 : mes("You can now make Willow Shortbows.");
+    case 37 : mes("You can now make Steel Darts.");
+    case 40 : mes("You can now make Willow Longbows.");
+    case 45 : mes("You can now make Mithril Arrows.");
+    case 50 : mes("You can now make Maple Shortbows.");
+    case 52 : mes("You can now make Mithril Darts.");
+    case 55 : mes("You can now make Maple Longbows.");
+    case 60 : mes("You can now make Adamant Arrows.");
+    case 65 : mes("You can now make Yew Shortbows.");
+    case 67 : mes("You can now make Adamant Darts.");
+    case 70 : mes("You can now make Yew Longbows."); //imgur.com/3Er8U3m
+    case 75 : mes("You can now make Rune Arrows.");
+    case 80 : mes("You can now make Magic Shortbows.");
+    case 81 : mes("You can now make Rune Darts.");
+    case 85 : mes("You can now make Magic Longbows.");
 }

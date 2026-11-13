@@ -1,29 +1,29 @@
 [label,levelup_cooking]
 //Cooking level up unlock messages
 switch_int(stat_base(cooking)) {
-    case 5 : mes("You can now cook @dbl@Herring@bla@.");
-    case 10 : mes("You can now cook @dbl@Redberry Pies@bla@. Members can cook @dbl@Mackerel@bla@.");
-    case 12 : mes("Members can now cook @dbl@thin snail@bla@.");
-    case 15 : mes("You can now cook @dbl@Trout@bla@.");
-    case 17 : mes("Members can now cook @dbl@lean snail@bla@.");
-    case 18 : mes("Members can now cook @dbl@Cod@bla@.");
-    case 20 : mes("You can now cook @dbl@Meat Pies@bla@ and @dbl@Pike@bla@.");
-    case 22 : mes("Members can now cook @dbl@fat snail@bla@.");
-    case 25 : mes("You can now cook @dbl@Stews@bla@ and @dbl@Salmon@bla@.");
-    case 28 : mes("Members can now cook @dbl@slimey eels@bla@.");
-    case 30 : mes("You can now cook @dbl@Apple Pies@bla@ and @dbl@Tuna@bla@.");
-    case 32 : mes("You are now qualified to enter the prestigious @dbl@Chefs' Guild@bla@.");
-    case 35 : mes("You can now cook @dbl@Pizzas@bla@ and @dbl@Wine@bla@.");
-    case 40 : mes("You can now cook @dbl@Cakes@bla@ and @dbl@Lobsters@bla@.");
-    case 43 : mes("Members can now cook @dbl@Bass@bla@.");
-    case 45 : mes("You can now cook @dbl@Meat Pizzas@bla@ and @dbl@Swordfish@bla@.");
-    case 50 : mes("You can now cook @dbl@Chocolate Cakes@bla@.");
-    case 53 : mes("Members can now cook @dbl@Lava Eel@bla@.");
-    case 55 : mes("You can now cook @dbl@Anchovy Pizza@bla@.");
-    case 58 : mes("Members can now cook @dbl@Pitta Bread@bla@.");
-    case 60 : mes("Members can now cook @dbl@Curry@bla@.");
-    case 65 : mes("Members can now cook @dbl@Pineapple Pizza@bla@.");
-    case 80 : mes("Members can now cook @dbl@Shark@bla@.");
-    case 82 : mes("Members can now cook @dbl@Sea Turtle@bla@.");
-    case 91 : mes("Members can now cook @dbl@Manta Rays@bla@.");
+    case 5 : mes("You can now cook Herring.");
+    case 10 : mes("You can now cook Redberry Pies. Members can cook Mackerel.");
+    case 12 : mes("Members can now cook thin snail.");
+    case 15 : mes("You can now cook Trout.");
+    case 17 : mes("Members can now cook lean snail.");
+    case 18 : mes("Members can now cook Cod.");
+    case 20 : mes("You can now cook Meat Pies and Pike.");
+    case 22 : mes("Members can now cook fat snail.");
+    case 25 : mes("You can now cook Stews and Salmon.");
+    case 28 : mes("Members can now cook slimey eels.");
+    case 30 : mes("You can now cook Apple Pies and Tuna.");
+    case 32 : mes("You are now qualified to enter the prestigious Chefs' Guild.");
+    case 35 : mes("You can now cook Pizzas and Wine.");
+    case 40 : mes("You can now cook Cakes and Lobsters.");
+    case 43 : mes("Members can now cook Bass.");
+    case 45 : mes("You can now cook Meat Pizzas and Swordfish.");
+    case 50 : mes("You can now cook Chocolate Cakes.");
+    case 53 : mes("Members can now cook Lava Eel.");
+    case 55 : mes("You can now cook Anchovy Pizza.");
+    case 58 : mes("Members can now cook Pitta Bread.");
+    case 60 : mes("Members can now cook Curry.");
+    case 65 : mes("Members can now cook Pineapple Pizza.");
+    case 80 : mes("Members can now cook Shark.");
+    case 82 : mes("Members can now cook Sea Turtle.");
+    case 91 : mes("Members can now cook Manta Rays.");
 }

@@ -1,33 +1,33 @@
 [label,levelup_herblore]
 //Herblore level up unlock messages
 switch_int(stat_base(herblore)) {
-    case 3 : mes("You can now make @dbl@Attack Potions@bla@. You can now identify @dbl@Guam Leaf@bla@, @dbl@Snake Weed @bla@and @dbl@Rogues Purse@bla@.");
-    case 5 : mes("You can now make @dbl@Antipoison Potions@bla@. You can now identify @dbl@Marrentill@bla@.");
-    case 11 : mes("You can now identify @dbl@Tarromin@bla@.");
-    case 12 : mes("You can now make @dbl@Strength Potions@bla@.");
-    case 20 : mes("You can now identify @dbl@Harralander@bla@.");
-    case 22 : mes("You can now make @dbl@Stat Restore Potions@bla@.");
-    case 25 : mes("You can now identify @dbl@Ranarr Weed@bla@.");
-    case 26 : mes("You can now make @dbl@Energy Potions@bla@.");
-    case 30 : mes("You can now make @dbl@Defence Potions@bla@.");
-    case 34 : mes("You can now make @dbl@Agility Potions@bla@.");
-    case 38 : mes("You can now make @dbl@Prayer Restore Potions@bla@.");
-    case 40 : mes("You can now identify @dbl@Irit Leaf@bla@.");
-    case 45 : mes("You can now make @dbl@Super Attack Potions@bla@.");
-    case 48 : mes("You can now make @dbl@Super Antipoison Potions@bla@. You can now identify @dbl@Avantoe@bla@.");
-    case 50 : mes("You can now make @dbl@Fishing Potions@bla@.");
-    case 52 : mes("You can now make @dbl@Super Energy Potions@bla@.");
-    case 54 : mes("You can now identify @dbl@Kwuarm@bla@.");
-    case 55 : mes("You can now make @dbl@Super Strength Potions@bla@.");
-    case 60 : mes("You can now make @dbl@Weapon Poisons."); //imgur.com/dLoBair
-    case 63 : mes("You can now make @dbl@Super Restore Potions@bla@.");
-    case 65 : mes("You can now identify @dbl@Cadantine@bla@.");
-    case 66 : mes("You can now make @dbl@Super Defence Potions@bla@.");
-    case 67 : mes("You can now identify @dbl@Lantadyme@bla@.");
-    case 69 : mes("You can now make @dbl@Anti-FireBreath Potions@bla@.");
-    case 70 : mes("You can now identify @dbl@Dwarf Weed@bla@.");
-    case 72 : mes("You can now make @dbl@Ranging Potions@bla@.");
-    case 75 : mes("You can now identify @dbl@Torstol@bla@.");
-    case 76 : mes("You can now make @dbl@Magic Potions@bla@.");
-    case 78 : mes("You can now make @dbl@Zamorak Potions@bla@.");
+    case 3 : mes("You can now make Attack Potions. You can now identify Guam Leaf, Snake Weed and Rogues Purse.");
+    case 5 : mes("You can now make Antipoison Potions. You can now identify Marrentill.");
+    case 11 : mes("You can now identify Tarromin.");
+    case 12 : mes("You can now make Strength Potions.");
+    case 20 : mes("You can now identify Harralander.");
+    case 22 : mes("You can now make Stat Restore Potions.");
+    case 25 : mes("You can now identify Ranarr Weed.");
+    case 26 : mes("You can now make Energy Potions.");
+    case 30 : mes("You can now make Defence Potions.");
+    case 34 : mes("You can now make Agility Potions.");
+    case 38 : mes("You can now make Prayer Restore Potions.");
+    case 40 : mes("You can now identify Irit Leaf.");
+    case 45 : mes("You can now make Super Attack Potions.");
+    case 48 : mes("You can now make Super Antipoison Potions. You can now identify Avantoe.");
+    case 50 : mes("You can now make Fishing Potions.");
+    case 52 : mes("You can now make Super Energy Potions.");
+    case 54 : mes("You can now identify Kwuarm.");
+    case 55 : mes("You can now make Super Strength Potions.");
+    case 60 : mes("You can now make Weapon Poisons."); //imgur.com/dLoBair
+    case 63 : mes("You can now make Super Restore Potions.");
+    case 65 : mes("You can now identify Cadantine.");
+    case 66 : mes("You can now make Super Defence Potions.");
+    case 67 : mes("You can now identify Lantadyme.");
+    case 69 : mes("You can now make Anti-FireBreath Potions.");
+    case 70 : mes("You can now identify Dwarf Weed.");
+    case 72 : mes("You can now make Ranging Potions.");
+    case 75 : mes("You can now identify Torstol.");
+    case 76 : mes("You can now make Magic Potions.");
+    case 78 : mes("You can now make Zamorak Potions.");
 }

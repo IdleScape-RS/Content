@@ -1,54 +1,54 @@
 [label,levelup_crafting]
 //Crating level up unlock messages
 switch_int(stat_base(crafting)) {
-    case 5 : mes("You can now craft @dbl@Gold Rings@bla@.");
-    case 6 : mes("You can now craft @dbl@Gold Necklaces@bla@.");
-    case 7 : mes("You can now craft @dbl@Boots@bla@ and @dbl@Pie Dishes@bla@.");
-    case 8 : mes("You can now craft @dbl@Bowls@bla@ and @dbl@Gold Amulets@bla@.");
-    case 9 : mes("You can now craft @dbl@Leather Cowls@bla@.");
-    case 10 : mes("Members can now craft @dbl@Bow Strings@bla@.");
-    case 11 : mes("You can now craft @dbl@Leather Vambraces@bla@.");
-    case 13 : mes("Members can now cut @dbl@Jade@bla@.");
-    case 14 : mes("You can now make @dbl@Leather Armour@bla@.");
-    case 15 : mes("Members can now make @dbl@snail shell helmets (snelms)@bla@.");
-    case 16 : mes("You can now craft @dbl@Holy Symbols of Saradomin@bla@ and members can cut @dbl@Red Topaz@bla@."); //imgur.com/PSmUwiG
-    case 18 : mes("You can now craft @dbl@Leather Chaps@bla@.");
-    case 20 : mes("You can now cut @dbl@Sapphires@bla@ and craft @dbl@Sapphire @dbl@Rings@bla@.");
-    case 22 : mes("You can now craft @dbl@Sapphire Necklaces@bla@.");
-    case 24 : mes("You can now craft @dbl@Sapphire Amulets@bla@.");
-    case 27 : mes("You can now cut @dbl@Emeralds@bla@ and craft @dbl@Emerald @dbl@Rings@bla@.");
-    case 28 : mes("You can now craft @dbl@Hard Leather Armour@bla@.");
-    case 29 : mes("You can now craft @dbl@Emerald Necklaces@bla@.");
-    case 31 : mes("You can now craft @dbl@Emerald Amulets@bla@.");
-    case 33 : mes("Members can now craft @dbl@Vials@bla@.");
-    case 34 : mes("You can now cut @dbl@Rubies@bla@ and craft @dbl@Ruby Rings@bla@.");
-    case 38 : mes("Members can now craft @dbl@Leather Coifs@bla@.");
+    case 5 : mes("You can now craft Gold Rings.");
+    case 6 : mes("You can now craft Gold Necklaces.");
+    case 7 : mes("You can now craft Boots and Pie Dishes.");
+    case 8 : mes("You can now craft Bowls and Gold Amulets.");
+    case 9 : mes("You can now craft Leather Cowls.");
+    case 10 : mes("Members can now craft Bow Strings.");
+    case 11 : mes("You can now craft Leather Vambraces.");
+    case 13 : mes("Members can now cut Jade.");
+    case 14 : mes("You can now make Leather Armour.");
+    case 15 : mes("Members can now make snail shell helmets (snelms).");
+    case 16 : mes("You can now craft Holy Symbols of Saradomin and members can cut Red Topaz."); //imgur.com/PSmUwiG
+    case 18 : mes("You can now craft Leather Chaps.");
+    case 20 : mes("You can now cut Sapphires and craft Sapphire Rings.");
+    case 22 : mes("You can now craft Sapphire Necklaces.");
+    case 24 : mes("You can now craft Sapphire Amulets.");
+    case 27 : mes("You can now cut Emeralds and craft Emerald Rings.");
+    case 28 : mes("You can now craft Hard Leather Armour.");
+    case 29 : mes("You can now craft Emerald Necklaces.");
+    case 31 : mes("You can now craft Emerald Amulets.");
+    case 33 : mes("Members can now craft Vials.");
+    case 34 : mes("You can now cut Rubies and craft Ruby Rings.");
+    case 38 : mes("Members can now craft Leather Coifs.");
     case 40 : 
-        mes("You can now enter the @dbl@Crafting Guild.");
-        mes("@dbl@~ This is one of the requirements of the @dre@FREMENNIK TRIALS@dbl@. @dbl@~");
-    case 41 : mes("Members can now craft @dbl@Studded Leather Body Armour@bla@.");
-    case 43 : mes("You can now cut @dbl@Diamonds@bla@ and craft @dbl@Diamond @dbl@Rings@bla@.");
-    case 44 : mes("Members can now craft @dbl@Studded Leather Chaps@bla@.");
-    case 46 : mes("Members can now craft @dbl@Orbs@bla@.");
-    case 50 : mes("You can now craft @dbl@Ruby Amulets@bla@.");
-    case 54 : mes("Members can now craft @dbl@Water Battlestaffs@bla@.");
-    case 55 : mes("Members can now cut @dbl@Dragonstones @bla@and craft @dbl@Dragonstone Rings."); // imgur.com/m9Jq0hU
-    case 56 : mes("You can now craft @dbl@Diamond Necklaces@bla@.");
-    case 57 : mes("Members can now craft @dbl@Green Dragonhide Vambraces@bla@.");
-    case 58 : mes("Members can now craft @dbl@Earth Battlestaffs@bla@.");
-    case 60 : mes("Members can now craft @dbl@Green Dragonhide Chaps@bla@.");
-    case 62 : mes("Members can now craft @dbl@Fire Battlestaffs@bla@.");
-    case 63 : mes("Members can now craft @dbl@Green Dragonhide Armour@bla@.");
-    case 66 : mes("Members can now craft @dbl@Air Battlestaffs. and @dbl@Blue Dragonhide Vambraces."); //imgur.com/pl39sRP
-    case 68 : mes("Members can now craft @dbl@Blue Dragonhide Chaps@bla@.");
-    case 70 : mes("You can now craft @dbl@Diamond Amulets@bla@.");
-    case 71 : mes("Members can now craft @dbl@Blue Dragonhide Armour@bla@.");
-    case 72 : mes("Members can now craft @dbl@Dragonstone Necklaces@bla@.");
-    case 73 : mes("Members can now craft @dbl@Red Dragonhide Vambraces@bla@.");
-    case 75 : mes("Members can now craft @dbl@Red Dragonhide Chaps@bla@.");
-    case 77 : mes("Members can now craft @dbl@Red Dragonhide Armour@bla@.");
-    case 79 : mes("Members can now craft @dbl@Black Dragonhide Vambraces@bla@.");
-    case 80 : mes("Members can now craft @dbl@Dragonstone Amulets@bla@.");
-    case 82 : mes("Members can now craft @dbl@Black Dragonhide Chaps@bla@.");
-    case 84 : mes("Members can now craft @dbl@Black Dragonhide Armour@bla@.");
+        mes("You can now enter the Crafting Guild.");
+        mes("~ This is one of the requirements of the FREMENNIK TRIALS. ~");
+    case 41 : mes("Members can now craft Studded Leather Body Armour.");
+    case 43 : mes("You can now cut Diamonds and craft Diamond Rings.");
+    case 44 : mes("Members can now craft Studded Leather Chaps.");
+    case 46 : mes("Members can now craft Orbs.");
+    case 50 : mes("You can now craft Ruby Amulets.");
+    case 54 : mes("Members can now craft Water Battlestaffs.");
+    case 55 : mes("Members can now cut Dragonstones and craft Dragonstone Rings."); // imgur.com/m9Jq0hU
+    case 56 : mes("You can now craft Diamond Necklaces.");
+    case 57 : mes("Members can now craft Green Dragonhide Vambraces.");
+    case 58 : mes("Members can now craft Earth Battlestaffs.");
+    case 60 : mes("Members can now craft Green Dragonhide Chaps.");
+    case 62 : mes("Members can now craft Fire Battlestaffs.");
+    case 63 : mes("Members can now craft Green Dragonhide Armour.");
+    case 66 : mes("Members can now craft Air Battlestaffs. and Blue Dragonhide Vambraces."); //imgur.com/pl39sRP
+    case 68 : mes("Members can now craft Blue Dragonhide Chaps.");
+    case 70 : mes("You can now craft Diamond Amulets.");
+    case 71 : mes("Members can now craft Blue Dragonhide Armour.");
+    case 72 : mes("Members can now craft Dragonstone Necklaces.");
+    case 73 : mes("Members can now craft Red Dragonhide Vambraces.");
+    case 75 : mes("Members can now craft Red Dragonhide Chaps.");
+    case 77 : mes("Members can now craft Red Dragonhide Armour.");
+    case 79 : mes("Members can now craft Black Dragonhide Vambraces.");
+    case 80 : mes("Members can now craft Dragonstone Amulets.");
+    case 82 : mes("Members can now craft Black Dragonhide Chaps.");
+    case 84 : mes("Members can now craft Black Dragonhide Armour.");
 }

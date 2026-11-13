@@ -1,49 +1,49 @@
 [label,levelup_runecraft]
 //Runecraft level up unlock messages
 switch_int(stat_base(runecraft)) {
-    case 2 : mes("You can now craft @dbl@Mind Runes.");
-    case 5 : mes("You can now craft @dbl@Water Runes.");
-    case 9 : mes("You can now craft @dbl@Earth Runes.");
-    // case 11 : mes("You can now receive 2 @dbl@Air Runes@bla@.");
-    // case 13 : mes("Members can now craft @dbl@Mud Runes."); // https://i.imgur.com/CBgQATk.png (after pure ess)
-    case 14 : mes("You can now craft @dbl@Fire Runes.");
-    // case 19 : mes("You can now receive 2 @dbl@Water Runes@bla@.");
-    case 20 : mes("You can now craft @dbl@Body Runes.");
-    // case 22 : mes("You can now receive 3 @dbl@Air Runes@bla@.");
-    // case 26 : mes("You can now receive 2 @dbl@Earth Runes@bla@.");
-    case 27 : mes("Members can now craft @dbl@Cosmic Runes.");
-    // case 28 : mes("You can now receive 3 @dbl@Mind Runes@bla@.");
-    // case 33 : mes("You can now receive 4 @dbl@Air Runes@bla@.");
-    case 35 : mes("Members can now craft @dbl@Chaos Runes."); // https://i.imgur.com/ZebP7RG.png
-    // case 38 : mes("You can now receive 3 @dbl@Water Runes@bla@.");
-    // case 42 : mes("You can now receive 4 @dbl@Mind Runes@bla@.");
-    case 44 : mes("Members can now craft @dbl@Nature Runes."); // https://i.imgur.com/RpbOz9j.png (april 2nd 2004) / https://i.imgur.com/e0187NG.png (september 2004) Likely changed to members with Law Altar
-    // case 46 : mes("You can now receive 2 @dbl@Body Runes@bla@.");
-    // case 52 : mes("You can now receive 3 @dbl@Earth Runes@bla@.");
+    case 2 : mes("You can now craft Mind Runes.");
+    case 5 : mes("You can now craft Water Runes.");
+    case 9 : mes("You can now craft Earth Runes.");
+    // case 11 : mes("You can now receive 2 Air Runes.");
+    // case 13 : mes("Members can now craft Mud Runes."); // https://i.imgur.com/CBgQATk.png (after pure ess)
+    case 14 : mes("You can now craft Fire Runes.");
+    // case 19 : mes("You can now receive 2 Water Runes.");
+    case 20 : mes("You can now craft Body Runes.");
+    // case 22 : mes("You can now receive 3 Air Runes.");
+    // case 26 : mes("You can now receive 2 Earth Runes.");
+    case 27 : mes("Members can now craft Cosmic Runes.");
+    // case 28 : mes("You can now receive 3 Mind Runes.");
+    // case 33 : mes("You can now receive 4 Air Runes.");
+    case 35 : mes("Members can now craft Chaos Runes."); // https://i.imgur.com/ZebP7RG.png
+    // case 38 : mes("You can now receive 3 Water Runes.");
+    // case 42 : mes("You can now receive 4 Mind Runes.");
+    case 44 : mes("Members can now craft Nature Runes."); // https://i.imgur.com/RpbOz9j.png (april 2nd 2004) / https://i.imgur.com/e0187NG.png (september 2004) Likely changed to members with Law Altar
+    // case 46 : mes("You can now receive 2 Body Runes.");
+    // case 52 : mes("You can now receive 3 Earth Runes.");
     // https://oldschool.runescape.wiki/w/Law_Altar
     // 08/24/2004
-    case 54 : mes("Members can now craft @dbl@Law Runes@bla@."); // https://i.imgur.com/XeXDXB6.png (october 2004) Likely changed to members with Law Altar
-    // case 55 : mes("You can now receive 4 @dbl@Air Runes@bla@.");
-    // case 56 : mes("You can now receive 5 @dbl@Mind Runes@bla@.");
-    // case 57 : mes("You can now receive 4 @dbl@Water Runes@bla@.");
-    // case 59 : mes("Members can now receive 2 @dbl@Cosmic Runes@bla@."); // https://i.imgur.com/9LbSVlN.png (after pure ess)
+    case 54 : mes("Members can now craft Law Runes."); // https://i.imgur.com/XeXDXB6.png (october 2004) Likely changed to members with Law Altar
+    // case 55 : mes("You can now receive 4 Air Runes.");
+    // case 56 : mes("You can now receive 5 Mind Runes.");
+    // case 57 : mes("You can now receive 4 Water Runes.");
+    // case 59 : mes("Members can now receive 2 Cosmic Runes."); // https://i.imgur.com/9LbSVlN.png (after pure ess)
     // https://oldschool.runescape.wiki/w/Death_Altar
     // 10/17/2005
-    // case 65 : mes("Members can now craft @dbl@Death Runes."); // https://i.imgur.com/JpAkzun.png (after pure ess)
-    // case 66 : mes("You can now receive 7 @dbl@Air Runes@bla@.");
-    // case 70 : mes("You can now receive 6 @dbl@Mind Runes@bla@ and you can now receive 3 @dbl@Fire Runes@bla@.");
-    // case 74 : mes("Members can now receive 2 @dbl@Chaos Runes@bla@."); // https://i.imgur.com/fd1utjc.png (after pure ess)
-    // case 76 : mes("You can now receive 5 @dbl@Water Runes@bla@.");
-    // case 77 : mes("Members can now craft @dbl@Blood Runes."); https://i.imgur.com/AlIK0HI.png / https://i.imgur.com/VLDpViC.png (after pure ess)
-    // case 77 : mes("You can now receive 8 @dbl@Air Runes@bla@.");
-    // case 78 : mes("You can now receive 4 @dbl@Earth Runes@bla@.");
-    // case 84 : mes("You can now receive 7 @dbl@Mind Runes@bla@.");
-    // case 88 : mes("You can now receive 9 @dbl@Air Runes@bla@.");
+    // case 65 : mes("Members can now craft Death Runes."); // https://i.imgur.com/JpAkzun.png (after pure ess)
+    // case 66 : mes("You can now receive 7 Air Runes.");
+    // case 70 : mes("You can now receive 6 Mind Runes and you can now receive 3 Fire Runes.");
+    // case 74 : mes("Members can now receive 2 Chaos Runes."); // https://i.imgur.com/fd1utjc.png (after pure ess)
+    // case 76 : mes("You can now receive 5 Water Runes.");
+    // case 77 : mes("Members can now craft Blood Runes."); https://i.imgur.com/AlIK0HI.png / https://i.imgur.com/VLDpViC.png (after pure ess)
+    // case 77 : mes("You can now receive 8 Air Runes.");
+    // case 78 : mes("You can now receive 4 Earth Runes.");
+    // case 84 : mes("You can now receive 7 Mind Runes.");
+    // case 88 : mes("You can now receive 9 Air Runes.");
     // https://i.imgur.com/LVWemoU.png (november 2005 N0valyfe blog) / https://i.imgur.com/Bw0aABK.png / https://i.imgur.com/PAyrJrX.png
-    // case 90 : mes("Members can now craft @dbl@Soul Runes.");
-    // case 91 : mes("Members can now receive 2 @dbl@Nature Runes@bla@.");
-    // case 92 : mes("You can now receive 3 @dbl@Body Runes@bla@.");
-    // case 95 : mes("You can now receive 6 @dbl@Water Runes@bla@ and members can now receive 2 @dbl@Law Runes@bla@.");
-    // case 98 : mes("You can now receive 8 @dbl@Mind Runes@bla@.");
-    // case 99 : mes("You can now receive 10 @dbl@Air Runes@bla@.");
+    // case 90 : mes("Members can now craft Soul Runes.");
+    // case 91 : mes("Members can now receive 2 Nature Runes.");
+    // case 92 : mes("You can now receive 3 Body Runes.");
+    // case 95 : mes("You can now receive 6 Water Runes and members can now receive 2 Law Runes.");
+    // case 98 : mes("You can now receive 8 Mind Runes.");
+    // case 99 : mes("You can now receive 10 Air Runes.");
 }

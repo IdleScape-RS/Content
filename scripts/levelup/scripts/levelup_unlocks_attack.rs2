@@ -1,10 +1,10 @@
 [label,levelup_attack]
 //Attack level up unlock messages
 switch_int(stat_base(attack)) {
-    case 5 : mes("You can now wield @dbl@Steel Weaponry!");
-    case 10 : mes("You can now wield @dbl@Black Weaponry!");
-    case 20 : mes("You can now wield @dbl@Mithril Weaponry!");
-    case 30 : mes("You can now wield @dbl@Adamant Weaponry!");
-    case 40 : mes("You can now wield @dbl@Rune Weaponry!");
-    case 60 : mes("Members can now wield @dbl@Dragon Weaponry!"); //imgur.com/VfAYlr7
+    case 5 : mes("You can now wield Steel Weaponry!");
+    case 10 : mes("You can now wield Black Weaponry!");
+    case 20 : mes("You can now wield Mithril Weaponry!");
+    case 30 : mes("You can now wield Adamant Weaponry!");
+    case 40 : mes("You can now wield Rune Weaponry!");
+    case 60 : mes("Members can now wield Dragon Weaponry!"); //imgur.com/VfAYlr7
 }

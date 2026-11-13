@@ -1,16 +1,16 @@
 [label,levelup_mining]
 //Miningtack level up unlock messages
 switch_int(stat_base(mining)) {
-    case 6 : mes("You can now mine with @dbl@Steel Pickaxes.");
-    case 15 : mes("You can now mine @dbl@Iron.");
-    case 20 : mes("You can now mine @dbl@Silver.");
-    case 21 : mes("You can now mine with @dbl@Mithril Pickaxes.");
-    case 30 : mes("You can now mine @dbl@Coal.");
-    case 31 : mes("You can now mine with @dbl@Adamant Pickaxes.");
-    case 40 : mes("You can now mine @dbl@Gold@bla@. Members can mine @dbl@Gem rocks@bla@.");
-    case 41 : mes("You can now mine with @dbl@Rune Pickaxes."); //imgur.com/UvfRKuk
-    case 55 : mes("You can now mine @dbl@Mithril.");
-    case 60 : mes("You can now enter the world famous @dbl@Mining Guild."); //imgur.com/BPWbfAD
-    case 70 : mes("You can now mine @dbl@Adamantite.");
-    case 85 : mes("You can now mine @dbl@Runite."); //imgur.com/jIwPpTa
+    case 6 : mes("You can now mine with Steel Pickaxes.");
+    case 15 : mes("You can now mine Iron.");
+    case 20 : mes("You can now mine Silver.");
+    case 21 : mes("You can now mine with Mithril Pickaxes.");
+    case 30 : mes("You can now mine Coal.");
+    case 31 : mes("You can now mine with Adamant Pickaxes.");
+    case 40 : mes("You can now mine Gold. Members can mine Gem rocks.");
+    case 41 : mes("You can now mine with Rune Pickaxes."); //imgur.com/UvfRKuk
+    case 55 : mes("You can now mine Mithril.");
+    case 60 : mes("You can now enter the world famous Mining Guild."); //imgur.com/BPWbfAD
+    case 70 : mes("You can now mine Adamantite.");
+    case 85 : mes("You can now mine Runite."); //imgur.com/jIwPpTa
 }
